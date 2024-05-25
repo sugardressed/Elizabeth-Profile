@@ -1,0 +1,119 @@
+//COLORS
+$darkColor: #512da8;
+$darkMiddleColor: #673ab7;
+$mainGradient:linear-gradient(90deg,#673ab7 0%, #e040fb 80%);
+$accentColor:#e040fb;
+$mGray: #d1c4e9;
+$dGray:#757575;
+$lGray:#BDBDBD;
+
+//BREAK POINTS
+
+$mobileLand: 770px;
+$mobile: 500px;
+
+@mixin mobile{
+     @media (max-width:#{$mobile}){//max-width = no more than
+            @content;
+}
+}
+
+@mixin mobileLand{
+      @media((min-width:#{$mobile}) and (max-width:#{$mobileLand})){//between no less than and no more than
+            @content;
+      }
+}
+
+.profile .profile-img {
+      border-radius: 5vw;
+      transition: transform 5s ease-out;
+}
+.profile .profile-img:hover{
+      //animation: mPic 5s ease-in forwards 1;
+      animation: mPic 5s  ease-out 1;
+}
+
+@keyframes mPic{
+      0%{
+          opacity: 1;
+          bottom: 25px;
+      }
+      25%{
+            opacity: .8;
+            bottom: 50px;
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+      }
+      50%{
+          opacity: .7;
+          bottom: 30px;
+      }
+      75%{
+            opacity: .8;
+            bottom: 25px
+      }
+      100%{
+            opacity: 1;
+      }
+  }
+
+.bg-gradient-primary-to-secondary {
+      background: #673ab7;
+      background: linear-gradient(90deg,#673ab7 0%, #e040fb 80%);
+      // padding-bottom: 3rem !important;
+}
+.btn-primary {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #9203AB;
+      --bs-btn-border-color: #9203AB;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #512da8;
+      --bs-btn-hover-border-color: #673ab7;
+      --bs-btn-focus-shadow-rgb: 64, 79, 245;
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: #512da8;
+      --bs-btn-active-border-color: #673ab7;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #9203AB;
+      --bs-btn-disabled-border-color: #9203AB;
+}
+.text-gradient {
+      background: -webkit-linear-gradient(315deg, #512da8 0%, #e040fb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+}
+.fw-bolder {
+      // font-weight: bolder !important;
+      color: $darkColor;
+  }
+ 
+.d-flex{
+
+@include mobile{
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex-flow: column;
+      // background: blue;
+      }
+@include mobileLand{
+      // background: purple;
+      flex-direction: column;
+      flex-flow: column;
+}
+}
+.text-muted {
+      color: #4E545A !important;
+     
+}
+.contactConf{
+     display: block;
+     color: $darkColor;
+     border-left-color: $lGray;
+     text-align: center;
+     padding: 5em;
+     margin: 2em;
+     background: $mGray;
+     border-radius: 25%;
+}
