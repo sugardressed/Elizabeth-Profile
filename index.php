@@ -332,7 +332,7 @@ and accelerate growth</span></h1>
 <section class="bg-light py-5">
     <div class="container px-5">
         <div class="row gx-5 justify-content-center">
-            <div class="col-xxl-8">
+            <div class="col-xxl-12">
                 <div class="text-center my-5">
                     <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
                     <p class="lead fw-light mb-4">I help businesses grow by streamlining operations, eliminating inefficiencies, and transforming complex processes into simple, effective solutions. Using innovative strategies and the latest technology tools, I create systems that save time, reduce effort, and drive sustainable growth.</p>
@@ -340,9 +340,9 @@ and accelerate growth</span></h1>
                     <div class="d-flex justify-content-center fs-2 gap-4">
                         <!-- <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a> -->
                         <a class="text-gradient" href="https://www.linkedin.com/in/elizabeth-r-a-4b69022a5/"
-                            alternative="linkedin" target="New"><i class="bi bi-linkedin"></i></a>
+                          aria-label="LinkedIn profile"  alternative="linkedin" target="New"><i class="bi bi-linkedin"></i></a>
                         <a class="text-gradient" href="https://github.com/sugardressed" alternative="github"
-                            target="New"><i class="bi bi-github"></i></a>
+                           aria-label="GitHub profile" target="New"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>

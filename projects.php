@@ -10,7 +10,7 @@ include('templates/header.php');
             <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
         </div>
         <div class="row gx-5 justify-content-center">
-            <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <div class="col-lg-11 col-xl-9 col-xxl-12">
                 <!-- Project Card 1-->
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">

@@ -4,7 +4,7 @@
 }
 
 .profile .profile-img:hover {
-  animation: mPic 5s ease-out 1;
+  animation: mPic 5s ease-out forwards;
 }
 
 @keyframes mPic {

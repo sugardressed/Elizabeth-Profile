@@ -30,7 +30,9 @@ $mobile: 500px;
 }
 .profile .profile-img:hover{
       //animation: mPic 5s ease-in forwards 1;
-      animation: mPic 5s  ease-out 1;
+      // animation: mPic 5s  ease-out 1;
+
+      animation: mPic 5s ease-out forwards;
 }
 
 @keyframes mPic{
@@ -57,6 +59,10 @@ $mobile: 500px;
             opacity: 1;
       }
   }
+
+
+
+
 
 .bg-gradient-primary-to-secondary {
       background: #673ab7;

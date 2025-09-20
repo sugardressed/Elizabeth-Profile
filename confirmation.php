@@ -3,40 +3,48 @@ define('TITLE','Elizabeth | Contact');
 include('templates/header.php');
 
 // Initial Variables
-$fName=$_POST['fName'];
-$email=$_POST['email'];
-$phone=$_POST['phone'];
-$message=$_POST['message'];
-$tfName=trim($fName);
-$tfName=ucwords($tfName);
-$tfName=htmlspecialchars($tfName);
+
+// $fName=$_POST['fName'];
+// $email=$_POST['email'];
+// $phone=$_POST['phone'];
+// $message=$_POST['message'];
+// $tfName=trim($fName);
+// $tfName=ucwords($tfName);
+// $tfName=htmlspecialchars($tfName);
+
+
+
+// Collect and sanitize input
+$fName   = htmlspecialchars(trim($_POST['fName'] ?? ''));
+$email   = htmlspecialchars(trim($_POST['email'] ?? ''));
+$phone   = htmlspecialchars(trim($_POST['phone'] ?? ''));
+$message = htmlspecialchars(trim($_POST['message'] ?? ''));
+
+if ($fName && $email && $message) {
+    // Prepare email
+    $to = "sugardressed@gmail.com";
+    $subject = "New Contact Form Submission";
+    $body = "Name: $fName\nEmail: $email\nPhone: $phone\nMessage: $message";
+    $headers = "From: $email\r\nReply-To: $email\r\n";
+
+    // Send email
+    mail($to, $subject, $body, $headers);
+
+    // Show confirmation to user
+    echo '<div class="contactConf">';
+    echo "<h2>Thank You for your Interest!</h2>";
+    echo "<p>Your message has been sent successfully. I will get back to you soon.</p>";
+    echo '</div>';
+
+    // Redirect after 10 seconds to home page
+    header("refresh:60;url=index.php");
+} else {
+    echo "<p>Missing information, please go back and try again.</p>";
+}
 
 ?>
 
-<body>
-    <div class="contactConf">
-        <h2>Thank You for your Interest!</h2>
-        <h3>I am receiving the following information:</h3>
-        <?php
-            // Select to subscribe
-            if(isset($_POST['fName'])) {
-                print "Name: $tfName <br>\n";
-            }
-            if(isset($_POST['email'])) {
-                print "Email: $email <br>\n";
-            }
-            if(isset($_POST['phone'])) {
-                print "Phone: $phone <br>\n";
-            }
-            if(isset($_POST['message'])) {
-                print "Message: $message";
-            }
-                else{
-                print "Missing information, please try again.";
-            }
-            ?>
-    </div>
-</body>
+
 
 
 <?php

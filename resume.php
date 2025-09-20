@@ -9,7 +9,7 @@ include('templates/header.php');
         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
     </div>
     <div class="row gx-5 justify-content-center">
-        <div class="col-lg-11 col-xl-9 col-xxl-8">
+        <div class="col-lg-11 col-xl-9 col-xxl-12">
             <!-- Experience Section-->
             <section>
                 <div class="d-flex align-items-center justify-content-between mb-4">
@@ -30,16 +30,12 @@ include('templates/header.php');
                                 <div class="bg-light p-4 rounded-4">
                                     <div class="text-primary fw-bolder mb-2">2010 - Present</div>
                                     <div class="small fw-bolder">Senior Data and Research Analyst</div>
-                                    <div class="small text-muted">Child Development Associates</div>
+                                    <div class="small text-muted"><a href="https://cdasd.org/" target="New" alternative="CDA Link">Child Development Associates</a></div>
                                     <div class="small text-muted">San Diego, CA</div>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>My main function on this company is to observe and recommend solutions to
-                                    streamline processes, I do Data Analysis and identify thrends of errors, I assist my
-                                    department with technical advises and help with the organization and planification
-                                    for new projects. That includes new software implementation, and create new
-                                    databases to help the data mining.</div>
+                                <div><p>CDA is a non-profit organization that supports the San Diego community by assisting families who are financially struggling. We help cover child care costs and connect families with high-quality child care options, ensuring children receive the care they need while parents work toward financial stability.<br>My main role in this company is to analyze processes and recommend innovative solutions to streamline operations. I perform data analysis to identify trends and recurring errors, and I provide technical guidance to my department. I also support the organization and planning of new projects, including software implementation and the design of new databases to enhance data mining and decision-making.</p></div>
                             </div>
                         </div>
                     </div>
@@ -52,19 +48,12 @@ include('templates/header.php');
                                 <div class="bg-light p-4 rounded-4">
                                     <div class="text-primary fw-bolder mb-2">2005 - 2010</div>
                                     <div class="small fw-bolder">Auto Loan Officer</div>
-                                    <div class="small text-muted">HSBC | Auto Finance</div>
+                                    <div class="small text-muted"><a href="https://www.us.hsbc.com/" target="New" alternative="HSBC Link">HSBC | Auto Finance</a></div>
                                     <div class="small text-muted">San Diego, CA</div>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>In a team setup environment, I worked as a team member and independently to
-                                    evaluate loan documentation submitted by auto branches. I was responsible to
-                                    determine if clients were
-                                    eligible for an auto loan using several tools such as credit bureau to check credit
-                                    scores, Carfax
-                                    and blue book to evaluate automobile’s market value. I was responsible to generate
-                                    the auto
-                                    loan contract and submitted to an Auditor Loan Officers for quality assurance.</div>
+                                <div><p>HSBC is a global financial institution, and the Auto San Diego branch provides nationwide financial solutions for vehicle purchases. In my role, I reviewed and evaluated highly confidential identity documentation to determine client eligibility for auto loans, applying state-specific regulations based on the origin of the documentation. I was later promoted to the Quality Assurance department, where I evaluated my peers’ document reviews to ensure compliance with both state and company regulations. Additionally, I provided process improvement recommendations, identified error trends, and supported training development initiatives to help maintain the branch’s high-quality standards.</p></div>
                             </div>
                         </div>
                     </div>
@@ -81,7 +70,7 @@ include('templates/header.php');
                                 <div class="bg-light p-4 rounded-4">
                                     <div class="text-secondary fw-bolder mb-2">2024 - Present</div>
                                     <div class="mb-2">
-                                        <div class="small fw-bolder">San Diego City College</div>
+                                        <div class="small fw-bolder"><a href="https://www.sdmesa.edu/" target="New" alternative="SDMC Link">San Diego Mesa College</a></div>
                                         <div class="small text-muted">San Diego, CA</div>
                                     </div>
                                     <div class="fst-italic">
@@ -91,8 +80,7 @@ include('templates/header.php');
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>I am currently pursuing an Associates in Web Development, I am currently earned 78
-                                    credits and I am expecting to graduate in the next couple of years.</div>
+                                <div>I am a freelancer and entrepreneur, building my own business while offering web development services. I am currently pursuing an Associate’s degree in Web Development, having already earned 78 credits, and I expect to graduate within the next couple of years.</div>
                             </div>
                         </div>
                     </div>
@@ -105,11 +93,11 @@ include('templates/header.php');
                                 <div class="bg-light p-4 rounded-4">
                                     <div class="text-secondary fw-bolder mb-2">1998 - 2002</div>
                                     <div class="mb-2">
-                                        <div class="small fw-bolder">Instituto Tecnologico de Tijuana</div>
+                                        <div class="small fw-bolder"><a href="https://www.tijuana.tecnm.mx/" targe="New" alternative="ITT Link">Instituto Tecnologico de Tijuana</a></div>
                                         <div class="small text-muted">Tijuana, BC, Mexico</div>
                                     </div>
                                     <div class="fst-italic">
-                                        <div class="small text-muted">Undergraduate</div>
+                                        <div class="small text-muted">Bachelor of Science</div>
                                         <div class="small text-muted">Computer Science Engineering</div>
                                     </div>
                                 </div>
