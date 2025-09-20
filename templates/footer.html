@@ -1,8 +1,13 @@
 <footer class="bg-white py-4 mt-auto">
     <div class="container px-5">
         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-            <div class="col-auto"><div class="small m-0">Copyright &copy; Elizabeth Ramirez 2024</div></div>
-            <div class="col-auto">
+            <div class="col-auto"><div class="small m-0">
+                       <a href="#top">Go to Top</a><br>
+                Copyright &copy; <a href="mailto:sugardressed@gmail.com" target="_top">Elizabeth Ramirez </a> <?php echo date("Y"); ?><br>
+                <?php date_default_timezone_set('America/Los_Angeles'); print date('l F j | g:i a'); ?>
+            </div>
+        </div>
+        <div class="col-auto">
                 <a class="small" href="index.php">Home</a>
                 <span class="mx-1">&middot;</span>
                 <a class="small" href="resume.php">Resume</a>

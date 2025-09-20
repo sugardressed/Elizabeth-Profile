@@ -1,6 +1,6 @@
 <?php
 define('TITLE','Elizabeth | Projects');
-include('templates/header.html');
+include('templates/header.php');
 ?>
 
 <!-- Projects Section-->

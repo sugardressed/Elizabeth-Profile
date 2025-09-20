@@ -1,6 +1,6 @@
 <?php
 define('TITLE','Elizabeth | Resume');
-include('templates/header.html');
+include('templates/header.php');
 ?>
 
 <!-- Page Content-->

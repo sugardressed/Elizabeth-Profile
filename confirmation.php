@@ -1,6 +1,6 @@
 <?php
 define('TITLE','Elizabeth | Contact');
-include('templates/header.html');
+include('templates/header.php');
 
 // Initial Variables
 $fName=$_POST['fName'];
