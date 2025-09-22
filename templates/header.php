@@ -18,7 +18,7 @@
         
         <!-- Favicon-->
         <!-- <link rel="icon" type="image/png" href="assets/images/X_IconNobackground.png" /> -->
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Xugarsoft_icon_32x32.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/NewIcon.png">
 
 
         <!-- Custom Google font-->

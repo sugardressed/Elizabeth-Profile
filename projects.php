@@ -17,10 +17,7 @@ include('templates/header.php');
                         <div class="d-flex align-items-center">
                             <div class="p-5">
                                 <h2 class="fw-bolder">File Review Application</h2>
-                                <p>The File Review Application is a system the user utilize to audit files. Every year
-                                    the agency is audited by the State of California, the user needs to ensure that all
-                                    of the files adhere to Stage Regulations. The tools utilized for this project were:
-                                    MS Access for the front end, and MS-SQL Server for the back end. </p>
+                                <p>The File Review Application is an internal system designed to help staff audit client files efficiently and ensure compliance with State of California regulations. Since the agency undergoes an annual state audit, this tool enables users to verify that all files meet State requirements. The application was built using Microsoft Access for the front end and Microsoft SQL Server for the back end. </p>
                             </div>
                             <img class="img-fluid" src="./assets/images/FileReview.PNG" alt="File Review Application" />
                         </div>
@@ -31,12 +28,8 @@ include('templates/header.php');
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
                             <div class="p-5">
-                                <h2 class="fw-bolder">AP Library</h2>
-                                <p>The AP Library started as a bunch of forms saved in the network, the need was to
-                                    avoid users to delete or modify forms by mistake. The site was build for the user to
-                                    be able to locate forms easily and without the risk of modifying them. The tools
-                                    utilized on this project were: VS Studio, HTML,CSS,JavaScript, and PHP hosted in
-                                    Windows IIS</p>
+                                <h2 class="fw-bolder">Forms</h2>
+                                <p>The Forms' site was originated from a collection of forms stored on the network, where there was a risk of users accidentally deleting or modifying them. To address this, I developed a secure site that allows staff to easily locate and access forms without the possibility of altering the originals. The project was built using Visual Studio with HTML, CSS, JavaScript, and PHP, and hosted on a local IIS server.</p>
                             </div>
                             <img class="img-fluid" src="./assets/images/ApLibrary.png" alt="AP Library" />
                         </div>
@@ -47,12 +40,8 @@ include('templates/header.php');
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
                             <div class="p-5">
-                                <h2 class="fw-bolder">AP Directives</h2>
-                                <p>The AP Directives is a site to list policies and procedures updates, twice a week the
-                                    user receives a notification about new directions, and those are published in the
-                                    intranet. I built a shell where users with low skill in technology where able to
-                                    update that list without my help. The tools utilized on this project were: VS
-                                    Studio, HTML,CSS,JavaScript, and PHP hosted in Windows IIS</p>
+                                <h2 class="fw-bolder">Directives</h2>
+                                <p>The Directives site was developed to centralize and publish policy and procedure updates. Staff receive notifications twice a week about new directives, which are then posted on the intranet. I designed the site with a user-friendly interface that allowed staff with limited technical skills to update the list independently, without requiring my assistance. The project was built with HTML, CSS, JavaScript, and PHP, and hosted on a local IIS server.</p>
                             </div>
                             <img class="img-fluid" src="./assets/images/ApDirectives.png" alt="AP Directives" />
                         </div>

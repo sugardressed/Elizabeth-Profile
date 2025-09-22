@@ -19,7 +19,7 @@ include('templates/header.php');
                     <a class="btn btn-primary px-4 py-3" href="./assets/documents/Resume_Elizabeth_Ramirez.pdf"
                         target="New">
                         <div class="d-inline-block bi bi-download me-2"></div>
-                        Download Resume
+                        Download Detailed Resume
                     </a>
                 </div>
                 <!-- Experience Card 1-->
@@ -103,7 +103,7 @@ include('templates/header.php');
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>Complete Higher Education in Tijuana Mexico.</div>
+                                <div>Complete Higher Education in Tijuana Mexico, earned 441 credits of higher education.</div>
                             </div>
                         </div>
                     </div>
@@ -128,31 +128,26 @@ include('templates/header.php');
                             </div>
                             <div class="row row-cols-1 row-cols-md-3 mb-4">
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Analysis
-                                        and Data Mining</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Analysis & Reporting</div>
                                 </div>
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical
-                                        Analysis</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Process Improvement & Workflow Optimization</div>
                                 </div>
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Project Management & Team Leadership
                                     </div>
                                 </div>
                             </div>
                             <div class="row row-cols-1 row-cols-md-3">
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Database
-                                        Administration
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Training, Mentoring & Cross-Functional Collaboration
                                     </div>
                                 </div>
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software
-                                        Suite</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">System & Database Design</div>
                                 </div>
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface
-                                        Design</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Quality Assurance & Compliance</div>
                                 </div>
                             </div>
                         </div>
@@ -163,14 +158,14 @@ include('templates/header.php');
                                     class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
                                     <i class="bi bi-code-slash"></i>
                                 </div>
-                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Programming / Technical Language Skills</span></h3>
                             </div>
                             <div class="row row-cols-1 row-cols-md-3 mb-4">
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL / MySQL / SQL Server</div>
                                 </div>
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div>
                                 </div>
                                 <div class="col">
                                     <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div>
@@ -178,13 +173,13 @@ include('templates/header.php');
                             </div>
                             <div class="row row-cols-1 row-cols-md-3">
                                 <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div>
-                                </div>
-                                <div class="col mb-4 mb-md-0">
                                     <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div>
                                 </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML & CSS & SaaS</div>
+                                </div>
                                 <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">VB.Net</div>
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">React (with Node.js)</div>
                                 </div>
                             </div>
                         </div>
