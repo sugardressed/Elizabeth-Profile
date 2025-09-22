@@ -339,7 +339,7 @@ and accelerate growth</span></h1>
                     <p class="text-muted">Let’s streamline your processes. Let’s grow together. Make it easy, make it simple, and accelerate your path to the future. </p>
                     <div class="d-flex justify-content-center fs-2 gap-4">
                         <!-- <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a> -->
-                        <a class="text-gradient" href="https://www.linkedin.com/in/elizabeth-r-a-4b69022a5/"
+                        <a class="text-gradient" href="https://www.linkedin.com/in/elizabeth-ramirez-4b69022a5/"
                           aria-label="LinkedIn profile"  alternative="linkedin" target="New"><i class="bi bi-linkedin"></i></a>
                         <a class="text-gradient" href="https://github.com/sugardressed" alternative="github"
                            aria-label="GitHub profile" target="New"><i class="bi bi-github"></i></a>

@@ -23,12 +23,21 @@ $message = htmlspecialchars(trim($_POST['message'] ?? ''));
 if ($fName && $email && $message) {
     // Prepare email
     $to = "sugardressed@gmail.com";
-    $subject = "New Contact Form Submission";
-    $body = "Name: $fName\nEmail: $email\nPhone: $phone\nMessage: $message";
-    $headers = "From: $email\r\nReply-To: $email\r\n";
+    $subject = "Resume - Potential Job Offer Xugarsoft.com";
+    $body = "Name: $fName\n <br> Email: $email\n <br> Phone: $phone\n <br>Message: $message";
+    $headers = "Content-type: text/html; charset=UTF-8\r\n";
+
+    // "From: $email\r\nReply-To: $email\r\n";  --- Removed this line is not working
 
     // Send email
-    mail($to, $subject, $body, $headers);
+    $bool=mail($to, $subject, $body, $headers);
+
+    //TESTING EMAIL
+    // if ($bool) {
+    //     echo "<br>Email Received";
+    // } else {
+    //     echo "<br>Email Failed";
+    // }
 
     // Show confirmation to user
     echo '<div class="contactConf">';
@@ -37,7 +46,7 @@ if ($fName && $email && $message) {
     echo '</div>';
 
     // Redirect after 10 seconds to home page
-    header("refresh:60;url=index.php");
+    header("refresh:10;url=index.php");
 } else {
     echo "<p>Missing information, please go back and try again.</p>";
 }
