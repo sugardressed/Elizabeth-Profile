@@ -11,7 +11,19 @@ include('templates/header.php');
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-11 col-xl-9 col-xxl-12">
-                <!-- Project Card 1-->
+            <!-- Project Card Policies and Procedures-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder"><a href="http://pp.xugarsoft.com/" target="new" alternative="Policy and Procedures Site">Policies and Procedures</a></h2>
+                                <p>This site is a library that house policies and procedures for users to find content quick and easy. This demo-site was built with WordPress.</p>
+                            </div>
+                            <img class="img-fluid" src="./assets/images/PPScreen.png" alt="Policies and Procedures Site" />
+                        </div>
+                    </div>
+                </div>    
+            <!-- Project Card File Review Application-->
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
@@ -23,7 +35,7 @@ include('templates/header.php');
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 2-->
+                <!-- Project Card Forms-->
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
@@ -35,7 +47,7 @@ include('templates/header.php');
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 3-->
+                <!-- Project Directives-->
                 <div class="card overflow-hidden shadow rounded-4 border-0">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
