@@ -11,6 +11,19 @@ include('templates/header.php');
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-11 col-xl-9 col-xxl-12">
+            <!-- Foreveryoung Ecommerce-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder"><a href="https://foreveryoung.xugarsoft.com/index.php" target="new" alternative="Forever Young Supplements Site">Forever Young Supplements</a></h2>
+                                <p>This site is an ecommerce sample for health vitamins and products. This demo-site was done with PHP/MySQL and added AI Agent powered by BotPenguin.</p>
+                            </div>
+                            <img class="img-fluid" src="./assets/images/foreveryoungpage.png" alt="Forever Young Supplements Site" />
+                        </div>
+                    </div>
+                </div>   
+
             <!-- Project Card Policies and Procedures-->
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
