@@ -1,3 +1,5 @@
+console.log('contactV.js loaded');
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contactForm');
     const phoneInput = document.getElementById('phone');
@@ -14,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function isValidPhone(value) {
         const digits = value.replace(/\D/g, '');
         return digits.length === 10;
+    }
+
+    if (!form || !phoneInput) {
+        console.log('Form or phone input not found');
+        return;
     }
 
     phoneInput.addEventListener('input', function () {

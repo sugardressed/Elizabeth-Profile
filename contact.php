@@ -115,12 +115,6 @@ include('templates/header.php');
     </div>
 </section>
 
-
-
 </main>
-
 <script src="./js/contactV.js"></script>
-
-<?php
-include('templates/footer.html');
-?>
+<?php include('templates/footer.html'); ?>
