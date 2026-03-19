@@ -19,28 +19,28 @@ include('templates/header.php');
                 <div class="col-lg-8 col-xl-6">
                     <!-- Contact Form -->
                     <form id="contactForm" action="confirmation.php" method="post" autocomplete="off">
-                        <!-- Name input-->
+                        <!-- Name input -->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="fname" type="text" placeholder="Enter your name."
-                                   name="fName" required />
+                                   name="fName" required>
                             <label for="fname">Full name</label>
                         </div>
 
-                        <!-- Email input-->
+                        <!-- Email input -->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" name="email" type="email"
-                                   placeholder="name@example.com" required />
+                                   placeholder="name@example.com" required>
                             <label for="email">Email address</label>
                         </div>
 
-                        <!-- Phone input-->
+                        <!-- Phone input -->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" name="phone" type="tel"
-                                   placeholder="(123) 456-7890" required />
+                                   placeholder="(123) 456-7890" required>
                             <label for="phone">Phone number</label>
                         </div>
 
-                        <!-- Message input-->
+                        <!-- Message input -->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" name="message"
                                       placeholder="Enter your message here..." style="height: 10rem"
@@ -48,7 +48,16 @@ include('templates/header.php');
                             <label for="message">Message</label>
                         </div>
 
-                        <!-- Submit button-->
+                        <!-- Honeypot field: bots often fill this, humans won't -->
+                        <div style="display:none;">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" value="" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <!-- Time check -->
+                        <input type="hidden" name="form_time" value="<?php echo time(); ?>">
+
+                        <!-- Submit button -->
                         <div class="d-grid">
                             <input class="btn btn-primary btn-lg" id="submitButton" type="submit" value="Submit">
                         </div>
@@ -59,7 +68,6 @@ include('templates/header.php');
     </div>
 </section>
 </main>
-<!-- Footer-->
 <?php
 include('templates/footer.html');
 ?>
