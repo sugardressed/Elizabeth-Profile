@@ -2,6 +2,7 @@
 define('TITLE','Elizabeth | Contact');
 include('templates/header.php');
 ?>
+
 <!-- Page content-->
 <section class="py-5">
     <div class="container px-5">
@@ -18,40 +19,81 @@ include('templates/header.php');
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6">
                     <!-- Contact Form -->
-                    <form id="contactForm" action="confirmation.php" method="post" autocomplete="off">
-                        <!-- Name input -->
+                    <form id="contactForm" action="confirmation.php" method="post" autocomplete="off" novalidate>
+                        
+                        <!-- Full name -->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="fname" type="text" placeholder="Enter your name."
-                                   name="fName" required>
+                            <input
+                                class="form-control"
+                                id="fname"
+                                type="text"
+                                name="fName"
+                                placeholder="Enter your name"
+                                maxlength="100"
+                                required
+                            >
                             <label for="fname">Full name</label>
+                            <div class="invalid-feedback">Please enter your full name.</div>
                         </div>
 
-                        <!-- Email input -->
+                        <!-- Email -->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" name="email" type="email"
-                                   placeholder="name@example.com" required>
+                            <input
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="name@example.com"
+                                maxlength="150"
+                                required
+                            >
                             <label for="email">Email address</label>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
                         </div>
 
-                        <!-- Phone input -->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" name="phone" type="tel"
-                                   placeholder="(123) 456-7890" required>
+                        <!-- Phone -->
+                        <div class="form-floating mb-1">
+                            <input
+                                class="form-control"
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                placeholder="(619) 555-1212"
+                                maxlength="14"
+                                inputmode="numeric"
+                                required
+                            >
                             <label for="phone">Phone number</label>
+                            <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
                         </div>
+                        <div class="form-text mb-3">Enter a 10-digit phone number.</div>
 
-                        <!-- Message input -->
+                        <!-- Message -->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" name="message"
-                                      placeholder="Enter your message here..." style="height: 10rem"
-                                      required></textarea>
+                            <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                placeholder="Enter your message here..."
+                                style="height: 10rem"
+                                maxlength="2000"
+                                required
+                            ></textarea>
                             <label for="message">Message</label>
+                            <div class="invalid-feedback">Please enter a message.</div>
                         </div>
 
-                        <!-- Honeypot field: bots often fill this, humans won't -->
+                        <!-- Honeypot -->
                         <div style="display:none;">
                             <label for="website">Website</label>
-                            <input type="text" id="website" name="website" value="" tabindex="-1" autocomplete="off">
+                            <input
+                                type="text"
+                                id="website"
+                                name="website"
+                                value=""
+                                tabindex="-1"
+                                autocomplete="off"
+                            >
                         </div>
 
                         <!-- Time check -->
@@ -59,7 +101,12 @@ include('templates/header.php');
 
                         <!-- Submit button -->
                         <div class="d-grid">
-                            <input class="btn btn-primary btn-lg" id="submitButton" type="submit" value="Submit">
+                            <input
+                                class="btn btn-primary btn-lg"
+                                id="submitButton"
+                                type="submit"
+                                value="Submit"
+                            >
                         </div>
                     </form>
                 </div>
@@ -67,7 +114,13 @@ include('templates/header.php');
         </div>
     </div>
 </section>
+
+
+
 </main>
+
+<script src="./js/contactV.js"></script>
+
 <?php
 include('templates/footer.html');
 ?>

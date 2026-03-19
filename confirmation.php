@@ -13,10 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 /*
 |--------------------------------------------------------------------------
-| 2. Optional referer check (weak protection, keep it loose)
+| 2. Optional referer check
 |--------------------------------------------------------------------------
-| Do not rely on this alone.
-| Some browsers or privacy tools may not send HTTP_REFERER.
 */
 if (!empty($_SERVER['HTTP_REFERER'])) {
     if (strpos($_SERVER['HTTP_REFERER'], 'xugarsoft.com/contact.php') === false) {
@@ -28,7 +26,6 @@ if (!empty($_SERVER['HTTP_REFERER'])) {
 |--------------------------------------------------------------------------
 | 3. Honeypot check
 |--------------------------------------------------------------------------
-| Real users should never fill this field.
 */
 if (!empty($_POST['website'])) {
     die('Spam detected.');
@@ -38,8 +35,6 @@ if (!empty($_POST['website'])) {
 |--------------------------------------------------------------------------
 | 4. Time check
 |--------------------------------------------------------------------------
-| Bots often submit forms too quickly.
-| Require at least 3 seconds before submit.
 */
 if (!isset($_POST['form_time']) || !is_numeric($_POST['form_time'])) {
     die('Invalid form submission.');
@@ -51,7 +46,7 @@ if ((time() - (int)$_POST['form_time']) < 3) {
 
 /*
 |--------------------------------------------------------------------------
-| 5. Collect and validate input
+| 5. Collect raw input
 |--------------------------------------------------------------------------
 */
 $fNameRaw   = trim($_POST['fName'] ?? '');
@@ -59,27 +54,67 @@ $emailRaw   = trim($_POST['email'] ?? '');
 $phoneRaw   = trim($_POST['phone'] ?? '');
 $messageRaw = trim($_POST['message'] ?? '');
 
+/*
+|--------------------------------------------------------------------------
+| 6. Required fields
+|--------------------------------------------------------------------------
+*/
 if ($fNameRaw === '' || $emailRaw === '' || $phoneRaw === '' || $messageRaw === '') {
     die('Missing information, please go back and try again.');
 }
 
+/*
+|--------------------------------------------------------------------------
+| 7. Validate email format
+|--------------------------------------------------------------------------
+*/
 if (!filter_var($emailRaw, FILTER_VALIDATE_EMAIL)) {
-    die('Invalid email address.');
+    die('Please enter a valid email address.');
 }
 
 /*
 |--------------------------------------------------------------------------
-| 6. Sanitize for safe output/email body
+| 8. Validate email domain
+|--------------------------------------------------------------------------
+| This checks if the domain can receive mail.
+| It still does NOT guarantee the exact mailbox exists.
+*/
+$emailParts = explode('@', $emailRaw);
+$emailDomain = $emailParts[1] ?? '';
+
+if ($emailDomain === '' || (!checkdnsrr($emailDomain, 'MX') && !checkdnsrr($emailDomain, 'A'))) {
+    die('Please enter a real email domain.');
+}
+
+/*
+|--------------------------------------------------------------------------
+| 9. Validate phone as exactly 10 digits
+|--------------------------------------------------------------------------
+| Remove anything that is not a number first.
+| This allows formats like:
+| 6195551212
+| 619-555-1212
+| (619) 555-1212
+*/
+$phoneDigits = preg_replace('/\D/', '', $phoneRaw);
+
+if (strlen($phoneDigits) !== 10) {
+    die('Phone number must be exactly 10 digits.');
+}
+
+/*
+|--------------------------------------------------------------------------
+| 10. Sanitize for output
 |--------------------------------------------------------------------------
 */
 $fName   = htmlspecialchars($fNameRaw, ENT_QUOTES, 'UTF-8');
 $email   = htmlspecialchars($emailRaw, ENT_QUOTES, 'UTF-8');
-$phone   = htmlspecialchars($phoneRaw, ENT_QUOTES, 'UTF-8');
+$phone   = htmlspecialchars($phoneDigits, ENT_QUOTES, 'UTF-8');
 $message = nl2br(htmlspecialchars($messageRaw, ENT_QUOTES, 'UTF-8'));
 
 /*
 |--------------------------------------------------------------------------
-| 7. Prepare and send email
+| 11. Prepare and send email
 |--------------------------------------------------------------------------
 */
 $to      = 'sugardressed@gmail.com';
